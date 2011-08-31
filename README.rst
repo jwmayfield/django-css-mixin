@@ -7,8 +7,7 @@ Installation
 ============
 
 ::
-
-pip install git://github.com/jwmayfield/django-css-mixin.git
+  pip install git+git://github.com/jwmayfield/django-css-mixin.git
 
 Usage
 =====
@@ -22,7 +21,7 @@ models.py::
   class MyModel(CSSMixin, ...):
     ...
 
-some template code::
+example template code::
 
   {% for object in object_list %}
     <div id="{{ object.attr_id }}" class="{{ object.attr_class }}" style="{{ object.attr_style }}">{{ object }}</div>
